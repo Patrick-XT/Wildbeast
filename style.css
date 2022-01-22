@@ -19,6 +19,7 @@ h2,
 h3,
 h4,
 p,
+li,
 blockquote,
 dd {
   margin: 0px;
@@ -82,16 +83,22 @@ p {
 .navegacao-animais {
   background: #f7f7f7;
 }
-.navegacao-animais ul li img {
+.navegacao-animais img {
   margin-bottom: 20px;
-  background: white;
   padding: 20px;
   border-radius: 5px;
-  margin: 30px auto;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
-.navegacao-animais ul li img:hover {
+.navegacao-animais a {
+  display: block;
+  min-width: 60px;
+  max-width: 140px;
+  margin: 30px auto 30px auto;
+  background: white;
+}
+
+.navegacao-animais img:hover {
   background: #b07dfb;
 }
 .anuncio {
@@ -107,8 +114,8 @@ p {
   grid-template-columns: 1fr 1fr;
   max-width: 960px;
   gap: 30px;
-  margin-top: 40px;
   padding-bottom: 40px;
+  margin: 40px;
 }
 .display {
   display: grid;
@@ -172,7 +179,6 @@ p {
   width: 100%;
 }
 .citacao {
-  
   background: linear-gradient(135deg, #8844ee, #b07dfb);
   color: white;
   padding: 40px;
